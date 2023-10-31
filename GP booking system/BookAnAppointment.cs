@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GP_booking_system
 {
@@ -37,7 +38,13 @@ namespace GP_booking_system
             newAppointment = new Appointment(dateValue, timeValue);
             lAppointment.Add(newAppointment);
 
+            foreach (Appointment appointment in lAppointment)
+            {
+                currentAppointment = appointment;
+            }
 
+            textBox1.Text = "Saved your new appointment at " + currentAppointment.Time + " on the " + currentAppointment.Date;
         }
+    }
     }
 }
