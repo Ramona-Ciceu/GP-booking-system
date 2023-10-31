@@ -45,8 +45,8 @@ namespace GP_booking_system
             Patient.Add(newpatient);
 
             MainPage m = new MainPage();
-            m.Show();
-            this.Hide();
+          
+            
 
             string username = UsernameInput.Text;
             string password = PasswordInput.Text;
@@ -65,7 +65,9 @@ namespace GP_booking_system
                 {
                     MessageBox.Show("Login failed. Username or password incorrect.");
                 }
-            }
+            m.Show();
+            this.Hide();
+        }
         }
     }
 
