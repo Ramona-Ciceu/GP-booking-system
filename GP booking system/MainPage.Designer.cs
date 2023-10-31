@@ -51,6 +51,7 @@
             this.viewAppointment.TabIndex = 1;
             this.viewAppointment.Text = "View Appointments";
             this.viewAppointment.UseVisualStyleBackColor = true;
+            this.viewAppointment.Click += new System.EventHandler(this.viewAppointment_Click);
             // 
             // button3
             // 

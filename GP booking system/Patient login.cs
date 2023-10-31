@@ -36,6 +36,17 @@ namespace GP_booking_system
 
 
         }
+        /// <summary>
+        /// Creating username and password for the patient
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="Password"></param>
+        public Patient_login(string userName, string Password)
+        {
+            mName = userName;
+            mPassword = Password;
+            
+        }
 
         /// <summary>
         /// Creats a password and Email for the patient

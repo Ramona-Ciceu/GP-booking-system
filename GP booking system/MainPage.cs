@@ -22,6 +22,14 @@ namespace GP_booking_system
         {
             BookAnAppointment a = new BookAnAppointment();
             a.Show();
+            this.Hide();
+        }
+
+        private void viewAppointment_Click(object sender, EventArgs e)
+        {
+            VisitDetails v = new VisitDetails();
+            v.Show();
+            this.Hide();
         }
     }
 }
