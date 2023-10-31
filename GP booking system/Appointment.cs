@@ -9,17 +9,17 @@ namespace GP_booking_system
     internal class Appointment
     {
         Patient_login mName;
-        DateTime mDate;
-        DateTime mTime;
+        string mDate;
+        String mTime;
         String mDoctor;
 
         #region Properties
 
         public Patient_login Name {  get { return mName; } }
 
-        public DateTime Date { get { return mDate; } set { mDate = value; } }
+        public String Date { get { return mDate; } set { mDate = value; } }
 
-        public DateTime Time { get { return mTime; } set { mTime = value; } }
+        public String Time { get { return mTime; } set { mTime = value; } }
 
         public String Doctor { get {  return mDoctor; } set { mDoctor = value; } }
 
@@ -28,7 +28,7 @@ namespace GP_booking_system
         #region Constructors
 
         
-        public Appointment(DateTime date, DateTime time)
+        public Appointment(String date, String time)
         {
            mDate = date;
            mTime = time;
