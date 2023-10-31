@@ -32,6 +32,7 @@
             this.TimePicker = new System.Windows.Forms.DateTimePicker();
             this.bEnter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // DatePicker
@@ -50,7 +51,7 @@
             // 
             // bEnter
             // 
-            this.bEnter.Location = new System.Drawing.Point(162, 160);
+            this.bEnter.Location = new System.Drawing.Point(156, 160);
             this.bEnter.Name = "bEnter";
             this.bEnter.Size = new System.Drawing.Size(75, 23);
             this.bEnter.TabIndex = 2;
@@ -67,11 +68,19 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Select Time and Date";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(64, 189);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(279, 20);
+            this.textBox1.TabIndex = 4;
+            // 
             // BookAnAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 220);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bEnter);
             this.Controls.Add(this.TimePicker);
@@ -89,5 +98,6 @@
         private System.Windows.Forms.DateTimePicker TimePicker;
         private System.Windows.Forms.Button bEnter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
