@@ -27,6 +27,10 @@ namespace GP_booking_system
         Patient_login newName ;
         newName = new Patient_login("Anna");
         mName.Add(newName);
+            foreach (Patient_login p in mName)
+            {
+
+            }
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
