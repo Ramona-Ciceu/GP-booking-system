@@ -38,7 +38,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.patientfn = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -137,12 +137,12 @@
             this.textBox3.Size = new System.Drawing.Size(115, 20);
             this.textBox3.TabIndex = 9;
             // 
-            // textBox4
+            // patientfn
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 147);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(115, 20);
-            this.textBox4.TabIndex = 10;
+            this.patientfn.Location = new System.Drawing.Point(12, 147);
+            this.patientfn.Name = "patientfn";
+            this.patientfn.Size = new System.Drawing.Size(115, 20);
+            this.patientfn.TabIndex = 10;
             // 
             // textBox5
             // 
@@ -229,7 +229,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.patientfn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -259,7 +259,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox patientfn;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label8;

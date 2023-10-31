@@ -12,19 +12,25 @@ namespace GP_booking_system
 {
     public partial class VisitDetails : Form
     {
+        String pFirstName;
+        String pLastName;
+        String dFirstName;
+        String dLastName;
+        String reasonVisit;
+        String addNotes;
+        String verdict;
+        String prescriptionDetails;
+
         public VisitDetails()
         {
             InitializeComponent();
+            
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+        private void label6_Click(object sender, EventArgs e){}
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void label10_Click(object sender, EventArgs e) {}
     }
 }
