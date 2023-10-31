@@ -29,6 +29,7 @@ namespace GP_booking_system
             TimePicker.ShowUpDown = true;
         }
 
+        // saves the appointment in a list
         private void bEnter_Click(object sender, EventArgs e)
         {
             
@@ -46,5 +47,5 @@ namespace GP_booking_system
             textBox1.Text = "Saved your new appointment at " + currentAppointment.Time + " on the " + currentAppointment.Date;
         }
     }
-    }
+    
 }
