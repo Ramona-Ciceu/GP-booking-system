@@ -47,6 +47,25 @@ namespace GP_booking_system
             MainPage m = new MainPage();
             m.Show();
             this.Hide();
+
+            string username = UsernameInput.Text;
+            string password = PasswordInput.Text;
+          //  if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+             //   { MessageBox.Show("Please enter both username and password."); }
+          //  else
+           // {
+
+
+
+                if (username == UsernameInput.Text && password == PasswordInput.Text)
+                {
+                    MessageBox.Show("Login successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("Login failed. Username or password incorrect.");
+                }
+            }
         }
     }
-}
+
