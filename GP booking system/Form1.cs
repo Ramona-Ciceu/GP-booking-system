@@ -15,17 +15,18 @@ namespace GP_booking_system
     public partial class Form1 : Form
     {
 
-        List<Patient_login> Patient = new List<Patient_login>();
+        //Add patient logins
+       List<Patient_login> Patient = new List<Patient_login> { new Patient_login("patient1", "password1"),
+            new Patient_login("patient1", "password2")
+        };
         Patient_login currentPatient;
-       //ist<Patient_login> mPassword = new List<Patient_login>();
-      //List<Patient_login> mEmail = new List<Patient_login>();
-
+      
 
         public Form1()
         {
             InitializeComponent();
 
-            Patient_login newpatient;
+           Patient_login newpatient;
             newpatient = new Patient_login("Anna");
             Patient.Add(newpatient);
 
@@ -40,24 +41,22 @@ namespace GP_booking_system
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            /*
             Patient_login newpatient;
             newpatient = new Patient_login(UsernameInput.Text, PasswordInput.Text);
             Patient.Add(newpatient);
+             */
 
             MainPage m = new MainPage();
-          
+         
             
 
             string username = UsernameInput.Text;
             string password = PasswordInput.Text;
-          //  if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
-             //   { MessageBox.Show("Please enter both username and password."); }
-          //  else
-           // {
 
 
 
-                if (username == UsernameInput.Text && password == PasswordInput.Text)
+            if (username == UsernameInput.Text && password == PasswordInput.Text)
                 {
                     MessageBox.Show("Login successfully!");
                 }
@@ -68,6 +67,22 @@ namespace GP_booking_system
             m.Show();
             this.Hide();
         }
+        /// <summary>
+        /// Method to Authenticate patient
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        private bool AuthenticatePatient(string userName, string password)
+        {
+            foreach (var Patient_login in Patient)
+            {
+                if (Patient_login.Name == userName && Patient_login.Password == password)
+                { return true; }
+
+            }
+            return false;
         }
+    }
     }
 
