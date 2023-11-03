@@ -69,17 +69,19 @@ namespace GP_booking_system
         /// <param name="userName"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-       /* private bool AuthenticatePatient(string userName, string password)
+      /*  private bool AuthenticatePatient(string userName, string password)
         {
-            foreach (var Patient_login in Patient)
+           for (int i = 0; i< Patient_login;i++)
             {
-                if (Patient_login.Name == userName && Patient_login.Password == password)
+                if (Patient_login[i].Name == userName && Patient_login[i].Password==password)
                 { return true; }
 
             }
             return false;
-        }
-       */
+        }*/
 
     }
+       
+
+    
 }
