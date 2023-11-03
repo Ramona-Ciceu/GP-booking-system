@@ -64,8 +64,16 @@ namespace GP_booking_system
                 {
                     MessageBox.Show("Login failed. Username or password incorrect.");
                 }
+
+
+
+
+
+
             m.Show();
             this.Hide();
+
+
         }
         /// <summary>
         /// Method to Authenticate patient
@@ -83,6 +91,7 @@ namespace GP_booking_system
             }
             return false;
         }
+
     }
     }
 

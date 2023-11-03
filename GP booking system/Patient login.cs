@@ -62,8 +62,24 @@ namespace GP_booking_system
 
 
         //Methods
-       
-       
-        
+
+        /// <summary>
+        /// Method to Authenticate patient
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+       /* private bool AuthenticatePatient(string userName, string password)
+        {
+            foreach (var Patient_login in Patient)
+            {
+                if (Patient_login.Name == userName && Patient_login.Password == password)
+                { return true; }
+
+            }
+            return false;
+        }
+       */
+
     }
 }
