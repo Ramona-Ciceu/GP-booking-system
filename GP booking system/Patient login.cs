@@ -17,8 +17,17 @@ namespace GP_booking_system
 
         //Properties
 
-        public string Name { get; set; }
-        public string Password { get; set; }
+        public string Name
+        {
+            get { return mName; }
+            set { mName = value; }
+        }
+
+        public string Password
+        {
+            get { return mPassword; }
+            set { mPassword = value; }
+        }
         public string Email { get; set; }
 
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,82 +15,91 @@ namespace GP_booking_system
 {
     public partial class Form1 : Form
     {
-
-        //Add patient logins
+        // Declarations
+        bool verification = false;
         List<Patient_login> Patient = new List<Patient_login>();
-
         Patient_login currentPatient;
+        //ist<Patient_login> mPassword = new List<Patient_login>();
+        //List<Patient_login> mEmail = new List<Patient_login>();
 
 
         public Form1()
         {
             InitializeComponent();
-
+            // made accounts to test the login authorisation 
             Patient_login newpatient;
-            newpatient = new Patient_login("Anna", "password");
-           // Patient.Add(newpatient);
-
+            newpatient = new Patient_login("Anna", "password2");
+            Patient.Add(newpatient);
+            newpatient = new Patient_login("Testing", "password");
+            Patient.Add(newpatient);
             foreach (Patient_login p in Patient)
             {
                 currentPatient = p;
             }
+
+
         }
 
 
+        //Methods
 
+        /// <summary>
+        /// Will check if the username and password inputted is already stored in the list.
+        /// </summary>
+        /// <returns></returns>
+
+        public bool LoginVerification()
+        {
+
+            var userVerification = Patient.Exists(o => o.Name == UsernameInput.Text);
+            var passwordVerification = Patient.Exists(p => p.Password == PasswordInput.Text);
+
+
+            if (userVerification == true && passwordVerification == true)
+            {
+                verification = true;
+                return verification;
+            }
+            else { return verification; }
+
+
+        }
+
+        // will be used to sign up account
+        //public string NewAccount()
+        // {
+        // Patient_login newpatient;
+        // newpatient = new Patient_login(UsernameInput.Text, PasswordInput.Text);
+        // Patient.Add(newpatient);
+        // foreach (Patient_login p in Patient)
+        // {
+        //currentPatient = p;
+        //  }
+        // }
+
+        //UI EVENTS
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
 
-            Patient_login newpatient;
-            newpatient = new Patient_login(UsernameInput.Text, PasswordInput.Text);
-            Patient.Add(newpatient);
+            LoginVerification();
 
-
-            MainPage m = new MainPage();
-
-
-
-            string username = UsernameInput.Text;
-            string password = PasswordInput.Text;
-
-
-
-            if (username == UsernameInput.Text && password == PasswordInput.Text)
+            if (verification == true)
             {
                 MessageBox.Show("Login successfully!");
+
+                MainPage m = new MainPage();
+                m.Show();
+                this.Hide();
+
             }
             else
             {
                 MessageBox.Show("Login failed. Username or password incorrect.");
             }
 
-
-
-
-          /*   bool AuthenticatePatient(string userName, string Password)
-            {
-                for (int i = 0; i < Patient.Count; i++)
-                {
-                    if (Patient[i].Name == userName && Patient[i].Password == Password)
-                    { return true; }
-
-                }
-                return false;
-            } */
-
-
-
-
-            m.Show();
-            this.Hide();
-
-
         }
     }
 }
 
-        
-    
-    
 
