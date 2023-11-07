@@ -31,5 +31,12 @@ namespace GP_booking_system
             v.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            View_doctors d = new View_doctors();
+            d.Show();
+            this.Hide();
+        }
     }
 }

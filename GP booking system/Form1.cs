@@ -19,8 +19,7 @@ namespace GP_booking_system
         bool verification = false;
         List<Patient_login> Patient = new List<Patient_login>();
         Patient_login currentPatient;
-        //ist<Patient_login> mPassword = new List<Patient_login>();
-        //List<Patient_login> mEmail = new List<Patient_login>();
+     
 
 
         public Form1()
@@ -36,7 +35,7 @@ namespace GP_booking_system
             {
                 currentPatient = p;
             }
-
+          
 
         }
 
