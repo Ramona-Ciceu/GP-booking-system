@@ -9,7 +9,7 @@ namespace GP_booking_system
     internal class Appointment
     {
         Patient_login mName;
-        string mDate;
+        String mDate;
         String mTime;
         String mDoctor;
 
