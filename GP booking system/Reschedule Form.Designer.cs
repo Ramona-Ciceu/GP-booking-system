@@ -34,19 +34,21 @@
             // Confirmation
             // 
             this.Confirmation.AutoSize = true;
-            this.Confirmation.Location = new System.Drawing.Point(382, 40);
+            this.Confirmation.Location = new System.Drawing.Point(470, 73);
+            this.Confirmation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Confirmation.Name = "Confirmation";
-            this.Confirmation.Size = new System.Drawing.Size(35, 13);
+            this.Confirmation.Size = new System.Drawing.Size(44, 16);
             this.Confirmation.TabIndex = 0;
             this.Confirmation.Text = "label1";
             this.Confirmation.Click += new System.EventHandler(this.Confirmation_Click);
             // 
             // Reschudule_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Confirmation);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Reschudule_Form";
             this.Text = "Reschudule_Form";
             this.ResumeLayout(false);

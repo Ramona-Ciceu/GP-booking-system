@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace GP_booking_system
@@ -27,15 +28,30 @@ namespace GP_booking_system
 
         #region Constructors
 
-        
+        /// <summary>
+        /// Creates an appointment for the patient with the date and time
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="time"></param>
         public Appointment(String date, String time)
         {
-           mDate = date;
-           mTime = time;
+            mDate = date;
+            mTime = time;
+        }
+
+
+        #endregion
+
+        #region Methods
+
+        public void ChangeAppointment()
+        {
 
         }
 
 
         #endregion
     }
+
+
 }

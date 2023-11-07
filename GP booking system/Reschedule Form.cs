@@ -12,16 +12,16 @@ namespace GP_booking_system
 {
     public partial class Reschudule_Form : Form
     {
-       List<Reschedule> reschedules= new List<Reschedule>();
 
         public Reschudule_Form()
         {
             InitializeComponent();
-           //onfirmation.Text = "Are you sure you want to cancel youre appointment on" + Appointment.Date
+            //Confirmation.Text = "Are you sure you want to cancel youre appointment on";
 
-                Reschedule newAppoitnment;
-            newAppoitnment = new Reschedule( Patient_login ,BookAnAppointment.currentAppointment);
-            reschedules.Add(newAppoitnment);
+            //Reschedule newAppoitnment;
+            //newAppoitnment = new Reschedule(, "wuiehwhehio","ieireioh");
+            //reschedules.Add(newAppoitnment);
+
 
         }
 

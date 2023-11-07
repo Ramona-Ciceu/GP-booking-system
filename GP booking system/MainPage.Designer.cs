@@ -31,14 +31,14 @@
             this.BookAppointment = new System.Windows.Forms.Button();
             this.viewAppointment = new System.Windows.Forms.Button();
             this.viewDoctorsbtn = new System.Windows.Forms.Button();
-            this.rescheduleAppoitnment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BookAppointment
             // 
-            this.BookAppointment.Location = new System.Drawing.Point(62, 46);
+            this.BookAppointment.Location = new System.Drawing.Point(83, 112);
+            this.BookAppointment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BookAppointment.Name = "BookAppointment";
-            this.BookAppointment.Size = new System.Drawing.Size(246, 83);
+            this.BookAppointment.Size = new System.Drawing.Size(328, 102);
             this.BookAppointment.TabIndex = 0;
             this.BookAppointment.Text = "Book an Appointment";
             this.BookAppointment.UseVisualStyleBackColor = true;
@@ -46,9 +46,10 @@
             // 
             // viewAppointment
             // 
-            this.viewAppointment.Location = new System.Drawing.Point(62, 281);
+            this.viewAppointment.Location = new System.Drawing.Point(83, 282);
+            this.viewAppointment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewAppointment.Name = "viewAppointment";
-            this.viewAppointment.Size = new System.Drawing.Size(246, 83);
+            this.viewAppointment.Size = new System.Drawing.Size(328, 102);
             this.viewAppointment.TabIndex = 1;
             this.viewAppointment.Text = "View Appointments";
             this.viewAppointment.UseVisualStyleBackColor = true;
@@ -56,33 +57,24 @@
             // 
             // viewDoctorsbtn
             // 
-            this.viewDoctorsbtn.Location = new System.Drawing.Point(62, 388);
+            this.viewDoctorsbtn.Location = new System.Drawing.Point(83, 451);
+            this.viewDoctorsbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewDoctorsbtn.Name = "viewDoctorsbtn";
-            this.viewDoctorsbtn.Size = new System.Drawing.Size(246, 83);
+            this.viewDoctorsbtn.Size = new System.Drawing.Size(328, 102);
             this.viewDoctorsbtn.TabIndex = 2;
             this.viewDoctorsbtn.Text = "View Doctors";
             this.viewDoctorsbtn.UseVisualStyleBackColor = true;
             this.viewDoctorsbtn.Click += new System.EventHandler(this.button3_Click);
             // 
-            // rescheduleAppoitnment
-            // 
-            this.rescheduleAppoitnment.Location = new System.Drawing.Point(62, 166);
-            this.rescheduleAppoitnment.Name = "rescheduleAppoitnment";
-            this.rescheduleAppoitnment.Size = new System.Drawing.Size(246, 83);
-            this.rescheduleAppoitnment.TabIndex = 3;
-            this.rescheduleAppoitnment.Text = "Reschedule Appointment";
-            this.rescheduleAppoitnment.UseVisualStyleBackColor = true;
-            this.rescheduleAppoitnment.Click += new System.EventHandler(this.rescheduleAppoitnment_Click);
-            // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 515);
-            this.Controls.Add(this.rescheduleAppoitnment);
+            this.ClientSize = new System.Drawing.Size(517, 634);
             this.Controls.Add(this.viewDoctorsbtn);
             this.Controls.Add(this.viewAppointment);
             this.Controls.Add(this.BookAppointment);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);
@@ -94,6 +86,5 @@
         private System.Windows.Forms.Button BookAppointment;
         private System.Windows.Forms.Button viewAppointment;
         private System.Windows.Forms.Button viewDoctorsbtn;
-        private System.Windows.Forms.Button rescheduleAppoitnment;
     }
 }
