@@ -29,8 +29,11 @@ namespace GP_booking_system
             Patient_login newpatient;
             newpatient = new Patient_login("Anna", "password2");
             Patient.Add(newpatient);
-            newpatient = new Patient_login("Testing", "password");
+            newpatient = new Patient_login("Paul", "password1");
             Patient.Add(newpatient);
+            newpatient = new Patient_login("Elena", "password3");
+            Patient.Add(newpatient) ;   
+
             foreach (Patient_login p in Patient)
             {
                 currentPatient = p;

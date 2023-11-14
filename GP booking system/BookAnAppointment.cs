@@ -47,7 +47,7 @@ namespace GP_booking_system
             newAppointment = new Appointment(dateValue, timeValue);
             lAppointment.Add(newAppointment);
             cbSelect.Items.Add(newAppointment.Date);
-
+            currentAppointment = newAppointment;
 
 
 
@@ -56,7 +56,7 @@ namespace GP_booking_system
             // currentAppointment = appointment;
             //}
 
-            textBox1.Text = "Saved your new appointment at " + currentAppointment.Time + " on the " + currentAppointment.Date;
+            MessageBox.Show( "Your appointment has been booked for :" + currentAppointment.Time + " on the " + currentAppointment.Date);
         }
 
         private void bRenter_Click(object sender, EventArgs e)
@@ -70,6 +70,8 @@ namespace GP_booking_system
             lAppointment.Remove(lAppointment[cbSelect.SelectedIndex]);
             cbSelect.Items.RemoveAt(cbSelect.SelectedIndex);
             cbSelect.ResetText();
+            currentAppointment = newAppointment;
+            MessageBox.Show("You appointment has been changed to:" + currentAppointment.Time + " on the " + currentAppointment.Date);
 
         }
 

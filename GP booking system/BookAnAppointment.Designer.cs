@@ -32,19 +32,17 @@
             this.TimePicker = new System.Windows.Forms.DateTimePicker();
             this.bEnter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbBook = new System.Windows.Forms.GroupBox();
             this.bBook = new System.Windows.Forms.Button();
             this.bReschedule = new System.Windows.Forms.Button();
             this.gbReschedule = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bRenter = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.dtRescheduleTime = new System.Windows.Forms.DateTimePicker();
             this.dtRescheduleDate = new System.Windows.Forms.DateTimePicker();
             this.gbSelect = new System.Windows.Forms.GroupBox();
-            this.bSelect = new System.Windows.Forms.Button();
             this.cbSelect = new System.Windows.Forms.ComboBox();
+            this.bSelect = new System.Windows.Forms.Button();
             this.gbBook.SuspendLayout();
             this.gbReschedule.SuspendLayout();
             this.gbSelect.SuspendLayout();
@@ -53,7 +51,7 @@
             // DatePicker
             // 
             this.DatePicker.Location = new System.Drawing.Point(20, 71);
-            this.DatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.DatePicker.Name = "DatePicker";
             this.DatePicker.Size = new System.Drawing.Size(265, 22);
             this.DatePicker.TabIndex = 0;
@@ -61,7 +59,7 @@
             // TimePicker
             // 
             this.TimePicker.Location = new System.Drawing.Point(20, 121);
-            this.TimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.TimePicker.Name = "TimePicker";
             this.TimePicker.Size = new System.Drawing.Size(265, 22);
             this.TimePicker.TabIndex = 1;
@@ -69,7 +67,7 @@
             // bEnter
             // 
             this.bEnter.Location = new System.Drawing.Point(100, 175);
-            this.bEnter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEnter.Margin = new System.Windows.Forms.Padding(4);
             this.bEnter.Name = "bEnter";
             this.bEnter.Size = new System.Drawing.Size(100, 28);
             this.bEnter.TabIndex = 2;
@@ -87,19 +85,10 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Select Time and Date";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 318);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 22);
-            this.textBox1.TabIndex = 4;
-            // 
             // gbBook
             // 
             this.gbBook.Controls.Add(this.label1);
             this.gbBook.Controls.Add(this.bEnter);
-            this.gbBook.Controls.Add(this.textBox1);
             this.gbBook.Controls.Add(this.DatePicker);
             this.gbBook.Controls.Add(this.TimePicker);
             this.gbBook.Location = new System.Drawing.Point(375, 58);
@@ -134,7 +123,6 @@
             // 
             this.gbReschedule.Controls.Add(this.label2);
             this.gbReschedule.Controls.Add(this.bRenter);
-            this.gbReschedule.Controls.Add(this.textBox2);
             this.gbReschedule.Controls.Add(this.dtRescheduleTime);
             this.gbReschedule.Controls.Add(this.dtRescheduleDate);
             this.gbReschedule.Location = new System.Drawing.Point(706, 58);
@@ -166,14 +154,6 @@
             this.bRenter.UseVisualStyleBackColor = true;
             this.bRenter.Click += new System.EventHandler(this.bRenter_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(0, 318);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 22);
-            this.textBox2.TabIndex = 4;
-            // 
             // dtRescheduleTime
             // 
             this.dtRescheduleTime.Location = new System.Drawing.Point(20, 121);
@@ -202,6 +182,15 @@
             this.gbSelect.Text = "Select Appointment";
             this.gbSelect.Visible = false;
             // 
+            // cbSelect
+            // 
+            this.cbSelect.FormattingEnabled = true;
+            this.cbSelect.Location = new System.Drawing.Point(22, 34);
+            this.cbSelect.Name = "cbSelect";
+            this.cbSelect.Size = new System.Drawing.Size(199, 24);
+            this.cbSelect.TabIndex = 5;
+            this.cbSelect.SelectedIndexChanged += new System.EventHandler(this.cbSelect_SelectedIndexChanged);
+            // 
             // bSelect
             // 
             this.bSelect.Location = new System.Drawing.Point(62, 65);
@@ -213,15 +202,6 @@
             this.bSelect.UseVisualStyleBackColor = true;
             this.bSelect.Click += new System.EventHandler(this.bSelect_Click);
             // 
-            // cbSelect
-            // 
-            this.cbSelect.FormattingEnabled = true;
-            this.cbSelect.Location = new System.Drawing.Point(22, 34);
-            this.cbSelect.Name = "cbSelect";
-            this.cbSelect.Size = new System.Drawing.Size(199, 24);
-            this.cbSelect.TabIndex = 5;
-            this.cbSelect.SelectedIndexChanged += new System.EventHandler(this.cbSelect_SelectedIndexChanged);
-            // 
             // BookAnAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -232,7 +212,7 @@
             this.Controls.Add(this.bReschedule);
             this.Controls.Add(this.bBook);
             this.Controls.Add(this.gbBook);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BookAnAppointment";
             this.Text = "Ch";
             this.gbBook.ResumeLayout(false);
@@ -250,14 +230,12 @@
         private System.Windows.Forms.DateTimePicker TimePicker;
         private System.Windows.Forms.Button bEnter;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox gbBook;
         private System.Windows.Forms.Button bBook;
         private System.Windows.Forms.Button bReschedule;
         private System.Windows.Forms.GroupBox gbReschedule;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bRenter;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DateTimePicker dtRescheduleTime;
         private System.Windows.Forms.DateTimePicker dtRescheduleDate;
         private System.Windows.Forms.GroupBox gbSelect;
