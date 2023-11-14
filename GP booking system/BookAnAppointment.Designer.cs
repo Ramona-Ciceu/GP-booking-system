@@ -43,9 +43,16 @@
             this.gbSelect = new System.Windows.Forms.GroupBox();
             this.cbSelect = new System.Windows.Forms.ComboBox();
             this.bSelect = new System.Windows.Forms.Button();
+            this.bChangeDoc = new System.Windows.Forms.Button();
+            this.gbChangeDoc = new System.Windows.Forms.GroupBox();
+            this.cbChangeDoctor = new System.Windows.Forms.ComboBox();
+            this.bChangeDoctor = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tAssignedDoc = new System.Windows.Forms.TextBox();
             this.gbBook.SuspendLayout();
             this.gbReschedule.SuspendLayout();
             this.gbSelect.SuspendLayout();
+            this.gbChangeDoc.SuspendLayout();
             this.SuspendLayout();
             // 
             // DatePicker
@@ -87,13 +94,17 @@
             // 
             // gbBook
             // 
+            this.gbBook.Controls.Add(this.gbChangeDoc);
+            this.gbBook.Controls.Add(this.tAssignedDoc);
+            this.gbBook.Controls.Add(this.bChangeDoc);
+            this.gbBook.Controls.Add(this.label3);
             this.gbBook.Controls.Add(this.label1);
             this.gbBook.Controls.Add(this.bEnter);
             this.gbBook.Controls.Add(this.DatePicker);
             this.gbBook.Controls.Add(this.TimePicker);
             this.gbBook.Location = new System.Drawing.Point(375, 58);
             this.gbBook.Name = "gbBook";
-            this.gbBook.Size = new System.Drawing.Size(292, 386);
+            this.gbBook.Size = new System.Drawing.Size(292, 445);
             this.gbBook.TabIndex = 5;
             this.gbBook.TabStop = false;
             this.gbBook.Text = "Book an Appointment";
@@ -125,7 +136,7 @@
             this.gbReschedule.Controls.Add(this.bRenter);
             this.gbReschedule.Controls.Add(this.dtRescheduleTime);
             this.gbReschedule.Controls.Add(this.dtRescheduleDate);
-            this.gbReschedule.Location = new System.Drawing.Point(706, 58);
+            this.gbReschedule.Location = new System.Drawing.Point(700, 205);
             this.gbReschedule.Name = "gbReschedule";
             this.gbReschedule.Size = new System.Drawing.Size(292, 386);
             this.gbReschedule.TabIndex = 6;
@@ -174,7 +185,7 @@
             // 
             this.gbSelect.Controls.Add(this.cbSelect);
             this.gbSelect.Controls.Add(this.bSelect);
-            this.gbSelect.Location = new System.Drawing.Point(66, 316);
+            this.gbSelect.Location = new System.Drawing.Point(720, 58);
             this.gbSelect.Name = "gbSelect";
             this.gbSelect.Size = new System.Drawing.Size(251, 113);
             this.gbSelect.TabIndex = 8;
@@ -202,6 +213,64 @@
             this.bSelect.UseVisualStyleBackColor = true;
             this.bSelect.Click += new System.EventHandler(this.bSelect_Click);
             // 
+            // bChangeDoc
+            // 
+            this.bChangeDoc.Location = new System.Drawing.Point(167, 266);
+            this.bChangeDoc.Name = "bChangeDoc";
+            this.bChangeDoc.Size = new System.Drawing.Size(124, 24);
+            this.bChangeDoc.TabIndex = 9;
+            this.bChangeDoc.Text = "Change Doctor";
+            this.bChangeDoc.UseVisualStyleBackColor = true;
+            this.bChangeDoc.Click += new System.EventHandler(this.bChangeDoc_Click);
+            // 
+            // gbChangeDoc
+            // 
+            this.gbChangeDoc.Controls.Add(this.cbChangeDoctor);
+            this.gbChangeDoc.Controls.Add(this.bChangeDoctor);
+            this.gbChangeDoc.Location = new System.Drawing.Point(20, 310);
+            this.gbChangeDoc.Name = "gbChangeDoc";
+            this.gbChangeDoc.Size = new System.Drawing.Size(251, 113);
+            this.gbChangeDoc.TabIndex = 9;
+            this.gbChangeDoc.TabStop = false;
+            this.gbChangeDoc.Text = "Change Doctor";
+            this.gbChangeDoc.Visible = false;
+            // 
+            // cbChangeDoctor
+            // 
+            this.cbChangeDoctor.FormattingEnabled = true;
+            this.cbChangeDoctor.Location = new System.Drawing.Point(22, 34);
+            this.cbChangeDoctor.Name = "cbChangeDoctor";
+            this.cbChangeDoctor.Size = new System.Drawing.Size(199, 24);
+            this.cbChangeDoctor.TabIndex = 5;
+            this.cbChangeDoctor.SelectedIndexChanged += new System.EventHandler(this.cbChangeDoctor_SelectedIndexChanged);
+            // 
+            // bChangeDoctor
+            // 
+            this.bChangeDoctor.Location = new System.Drawing.Point(62, 65);
+            this.bChangeDoctor.Margin = new System.Windows.Forms.Padding(4);
+            this.bChangeDoctor.Name = "bChangeDoctor";
+            this.bChangeDoctor.Size = new System.Drawing.Size(100, 28);
+            this.bChangeDoctor.TabIndex = 5;
+            this.bChangeDoctor.Text = "Select";
+            this.bChangeDoctor.UseVisualStyleBackColor = true;
+            this.bChangeDoctor.Click += new System.EventHandler(this.bChangeDoctor_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 235);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Current Doctor Assigned:";
+            // 
+            // tAssignedDoc
+            // 
+            this.tAssignedDoc.Location = new System.Drawing.Point(9, 268);
+            this.tAssignedDoc.Name = "tAssignedDoc";
+            this.tAssignedDoc.Size = new System.Drawing.Size(152, 22);
+            this.tAssignedDoc.TabIndex = 5;
+            // 
             // BookAnAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -220,6 +289,7 @@
             this.gbReschedule.ResumeLayout(false);
             this.gbReschedule.PerformLayout();
             this.gbSelect.ResumeLayout(false);
+            this.gbChangeDoc.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -241,5 +311,11 @@
         private System.Windows.Forms.GroupBox gbSelect;
         private System.Windows.Forms.Button bSelect;
         private System.Windows.Forms.ComboBox cbSelect;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button bChangeDoc;
+        private System.Windows.Forms.GroupBox gbChangeDoc;
+        private System.Windows.Forms.ComboBox cbChangeDoctor;
+        private System.Windows.Forms.Button bChangeDoctor;
+        private System.Windows.Forms.TextBox tAssignedDoc;
     }
 }

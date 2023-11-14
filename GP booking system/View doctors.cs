@@ -30,7 +30,16 @@ namespace GP_booking_system
             
             newDoctor = new Doctors("Dana Scully", "Surgeon", "Female");
             doctors.Add(newDoctor);
-            
+
+            newDoctor = new Doctors("Elizabeth Brooks", "Pediatrics", "Female");
+            doctors.Add(newDoctor);
+
+            newDoctor = new Doctors("Harry Robbinson", "Cardiology", "Male");
+            doctors.Add(newDoctor);
+
+            newDoctor = new Doctors("Diana Parks", "Neurology", "Female");
+            doctors.Add(newDoctor);
+
             foreach (Doctors d in doctors)
             {
                viewDoctorsComboBox.Items.Add(d.Name);
@@ -51,7 +60,7 @@ namespace GP_booking_system
             currentDoctor = doctors[viewDoctorsComboBox.SelectedIndex];
             doctorsDetailsGroupBox.Visible = true;
             
-           for (int i = 0; i < 2; i++)
+           for (int i = 0; i < 5; i++)
             {
                 if (currentDoctor == doctors[i])
                 {
