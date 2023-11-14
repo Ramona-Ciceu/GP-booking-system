@@ -36,6 +36,7 @@
             this.dSpeciality = new System.Windows.Forms.Label();
             this.dName = new System.Windows.Forms.Label();
             this.selectDoctorLabel1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.doctorsDetailsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -136,11 +137,22 @@
             this.selectDoctorLabel1.TabIndex = 3;
             this.selectDoctorLabel1.Text = "Select a doctor";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 39);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "<-  Back to homepage";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // View_doctors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 565);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.selectDoctorLabel1);
             this.Controls.Add(this.doctorsDetailsGroupBox);
             this.Controls.Add(this.viewDoctors);
@@ -166,5 +178,6 @@
         private System.Windows.Forms.Label dName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label selectDoctorLabel1;
+        private System.Windows.Forms.Button button1;
     }
 }

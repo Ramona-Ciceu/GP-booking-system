@@ -49,6 +49,7 @@
             this.bChangeDoctor = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tAssignedDoc = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbBook.SuspendLayout();
             this.gbReschedule.SuspendLayout();
             this.gbSelect.SuspendLayout();
@@ -271,11 +272,22 @@
             this.tAssignedDoc.Size = new System.Drawing.Size(152, 22);
             this.tAssignedDoc.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 39);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "<-  Back to homepage";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // BookAnAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 873);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gbSelect);
             this.Controls.Add(this.gbReschedule);
             this.Controls.Add(this.bReschedule);
@@ -317,5 +329,6 @@
         private System.Windows.Forms.ComboBox cbChangeDoctor;
         private System.Windows.Forms.Button bChangeDoctor;
         private System.Windows.Forms.TextBox tAssignedDoc;
+        private System.Windows.Forms.Button button1;
     }
 }

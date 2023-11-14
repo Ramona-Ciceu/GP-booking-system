@@ -177,6 +177,13 @@ namespace GP_booking_system
             MessageBox.Show("Your doctor has been changed to: " + assignedDoctor);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainPage m = new MainPage();
+            m.Show();
+            this.Hide();
+        }
     }
     
 }

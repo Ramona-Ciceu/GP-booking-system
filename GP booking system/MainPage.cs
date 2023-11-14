@@ -39,11 +39,6 @@ namespace GP_booking_system
             this.Hide();
         }
 
-        private void rescheduleAppoitnment_Click(object sender, EventArgs e)
-        {
-           Reschudule_Form r = new Reschudule_Form();
-            r.Show();
-            this.Hide();
-        }
+        
     }
 }

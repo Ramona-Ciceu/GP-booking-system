@@ -32,5 +32,12 @@ namespace GP_booking_system
         private void label6_Click(object sender, EventArgs e){}
 
         private void label10_Click(object sender, EventArgs e) {}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainPage m = new MainPage();
+            m.Show();
+            this.Hide();
+        }
     }
 }
