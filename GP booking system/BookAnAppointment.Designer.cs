@@ -206,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 524);
+            this.ClientSize = new System.Drawing.Size(1024, 873);
             this.Controls.Add(this.gbSelect);
             this.Controls.Add(this.gbReschedule);
             this.Controls.Add(this.bReschedule);

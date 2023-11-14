@@ -72,6 +72,11 @@ namespace GP_booking_system
         {
 
         }
+
+        private void doctorsDetailsGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

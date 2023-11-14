@@ -9,14 +9,14 @@ namespace GP_booking_system
 {
     internal class Appointment
     {
-        Patient_login mName;
+        Doctors mName;
         String mDate;
         String mTime;
         String mDoctor;
 
         #region Properties
 
-        public Patient_login Name {  get { return mName; } }
+        public Doctors Name {  get { return mName; } }
 
         public String Date { get { return mDate; } set { mDate = value; } }
 
@@ -29,7 +29,7 @@ namespace GP_booking_system
         #region Constructors
 
         /// <summary>
-        /// Creates an appointment for the patient with the date and time
+        /// Creates an appointment for the patient with specified date and time
         /// </summary>
         /// <param name="date"></param>
         /// <param name="time"></param>
@@ -37,6 +37,18 @@ namespace GP_booking_system
         {
             mDate = date;
             mTime = time;
+        }
+        /// <summary>
+        /// Creates an appointment for the patient with specified date, time and doctor.
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="time"></param>
+        /// <param name="doctor"></param>
+        public Appointment(String date, String time, Doctors doctor)
+        {
+            mDate = date;
+            mTime = time;
+            mName = doctor;
         }
 
 
