@@ -20,7 +20,7 @@ namespace GP_booking_system
         String addNotes;
         String verdict;
         String prescriptionDetails;
-
+        
         public VisitDetails()
         {
             InitializeComponent();

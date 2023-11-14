@@ -56,7 +56,7 @@ namespace GP_booking_system
             newDoctor = new Doctors("Elizabeth Brooks", "Pediatrics", "Female");
             doctors.Add(newDoctor);
 
-            newDoctor = new Doctors("Harry Robbinson", "Cardiology", "Male");
+           newDoctor = new Doctors("Harry Robbinson", "Cardiology", "Male");
             doctors.Add(newDoctor);
 
             newDoctor = new Doctors("Diana Parks", "Neurology", "Female");
@@ -172,7 +172,7 @@ namespace GP_booking_system
             Appointment newAppointment;
             newAppointment = new Appointment(dateValue, timeValue, currentDoctor);
             lAppointment.Add(newAppointment);
-            lAppointment.Remove(lAppointment[cbChangeDoctor.SelectedIndex]);;
+            lAppointment.RemoveAt(2);
             currentAppointment = newAppointment;
             MessageBox.Show("Your doctor has been changed to: " + assignedDoctor);
 

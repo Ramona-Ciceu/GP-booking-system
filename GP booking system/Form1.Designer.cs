@@ -39,49 +39,56 @@
             // UserNameLabel
             // 
             this.UserNameLabel.AutoSize = true;
-            this.UserNameLabel.Location = new System.Drawing.Point(69, 86);
+            this.UserNameLabel.Location = new System.Drawing.Point(92, 106);
+            this.UserNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(55, 13);
+            this.UserNameLabel.Size = new System.Drawing.Size(70, 16);
             this.UserNameLabel.TabIndex = 0;
             this.UserNameLabel.Text = "Username";
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(69, 132);
+            this.PasswordLabel.Location = new System.Drawing.Point(92, 162);
+            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(53, 13);
+            this.PasswordLabel.Size = new System.Drawing.Size(67, 16);
             this.PasswordLabel.TabIndex = 1;
             this.PasswordLabel.Text = "Password";
             // 
             // UsernameInput
             // 
-            this.UsernameInput.Location = new System.Drawing.Point(162, 79);
+            this.UsernameInput.Location = new System.Drawing.Point(216, 97);
+            this.UsernameInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UsernameInput.Name = "UsernameInput";
-            this.UsernameInput.Size = new System.Drawing.Size(100, 20);
+            this.UsernameInput.Size = new System.Drawing.Size(132, 22);
             this.UsernameInput.TabIndex = 2;
             // 
             // PasswordInput
             // 
-            this.PasswordInput.Location = new System.Drawing.Point(162, 129);
+            this.PasswordInput.Location = new System.Drawing.Point(216, 159);
+            this.PasswordInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PasswordInput.Name = "PasswordInput";
-            this.PasswordInput.Size = new System.Drawing.Size(100, 20);
+            this.PasswordInput.PasswordChar = '*';
+            this.PasswordInput.Size = new System.Drawing.Size(132, 22);
             this.PasswordInput.TabIndex = 3;
             // 
             // ForgotPassword
             // 
-            this.ForgotPassword.Location = new System.Drawing.Point(246, 155);
+            this.ForgotPassword.Location = new System.Drawing.Point(181, 271);
+            this.ForgotPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ForgotPassword.Name = "ForgotPassword";
-            this.ForgotPassword.Size = new System.Drawing.Size(99, 23);
+            this.ForgotPassword.Size = new System.Drawing.Size(132, 28);
             this.ForgotPassword.TabIndex = 4;
             this.ForgotPassword.Text = "Forgot Password";
             this.ForgotPassword.UseVisualStyleBackColor = true;
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(81, 197);
+            this.LoginButton.Location = new System.Drawing.Point(112, 220);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(207, 35);
+            this.LoginButton.Size = new System.Drawing.Size(276, 43);
             this.LoginButton.TabIndex = 5;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -89,15 +96,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 277);
+            this.ClientSize = new System.Drawing.Size(565, 341);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.ForgotPassword);
             this.Controls.Add(this.PasswordInput);
             this.Controls.Add(this.UsernameInput);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.UserNameLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
