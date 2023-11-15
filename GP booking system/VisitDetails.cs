@@ -39,5 +39,10 @@ namespace GP_booking_system
             m.Show();
             this.Hide();
         }
+
+        private void VisitDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

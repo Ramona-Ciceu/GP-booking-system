@@ -27,11 +27,11 @@ namespace GP_booking_system
             InitializeComponent();
             // made accounts to test the login authorisation 
             Patient_login newpatient;
-            newpatient = new Patient_login("Anna", "password2");
+            newpatient = new Patient_login("patient1", "password1");
             Patient.Add(newpatient);
-            newpatient = new Patient_login("Paul", "password1");
+            newpatient = new Patient_login("patient2", "password2");
             Patient.Add(newpatient);
-            newpatient = new Patient_login("Elena", "password3");
+            newpatient = new Patient_login("patient3", "password3");
             Patient.Add(newpatient) ;   
 
             foreach (Patient_login p in Patient)

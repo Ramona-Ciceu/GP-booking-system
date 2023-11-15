@@ -35,46 +35,46 @@
             // 
             // BookAppointment
             // 
-            this.BookAppointment.Location = new System.Drawing.Point(83, 112);
-            this.BookAppointment.Margin = new System.Windows.Forms.Padding(4);
+            this.BookAppointment.BackColor = System.Drawing.Color.Honeydew;
+            this.BookAppointment.Location = new System.Drawing.Point(62, 91);
             this.BookAppointment.Name = "BookAppointment";
-            this.BookAppointment.Size = new System.Drawing.Size(328, 102);
+            this.BookAppointment.Size = new System.Drawing.Size(246, 83);
             this.BookAppointment.TabIndex = 0;
             this.BookAppointment.Text = "Book an Appointment";
-            this.BookAppointment.UseVisualStyleBackColor = true;
+            this.BookAppointment.UseVisualStyleBackColor = false;
             this.BookAppointment.Click += new System.EventHandler(this.BookAppointment_Click);
             // 
             // viewDoctorsbtn
             // 
-            this.viewDoctorsbtn.Location = new System.Drawing.Point(83, 451);
-            this.viewDoctorsbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.viewDoctorsbtn.BackColor = System.Drawing.Color.Cornsilk;
+            this.viewDoctorsbtn.Location = new System.Drawing.Point(62, 366);
             this.viewDoctorsbtn.Name = "viewDoctorsbtn";
-            this.viewDoctorsbtn.Size = new System.Drawing.Size(328, 102);
+            this.viewDoctorsbtn.Size = new System.Drawing.Size(246, 83);
             this.viewDoctorsbtn.TabIndex = 2;
             this.viewDoctorsbtn.Text = "View Doctors";
-            this.viewDoctorsbtn.UseVisualStyleBackColor = true;
+            this.viewDoctorsbtn.UseVisualStyleBackColor = false;
             this.viewDoctorsbtn.Click += new System.EventHandler(this.button3_Click);
             // 
             // viewAppointment
             // 
-            this.viewAppointment.Location = new System.Drawing.Point(83, 282);
-            this.viewAppointment.Margin = new System.Windows.Forms.Padding(4);
+            this.viewAppointment.BackColor = System.Drawing.Color.Thistle;
+            this.viewAppointment.Location = new System.Drawing.Point(62, 229);
             this.viewAppointment.Name = "viewAppointment";
-            this.viewAppointment.Size = new System.Drawing.Size(328, 102);
+            this.viewAppointment.Size = new System.Drawing.Size(246, 83);
             this.viewAppointment.TabIndex = 1;
             this.viewAppointment.Text = "View Appointments";
-            this.viewAppointment.UseVisualStyleBackColor = true;
+            this.viewAppointment.UseVisualStyleBackColor = false;
             this.viewAppointment.Click += new System.EventHandler(this.viewAppointment_Click);
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 634);
+            this.BackColor = System.Drawing.Color.Ivory;
+            this.ClientSize = new System.Drawing.Size(388, 515);
             this.Controls.Add(this.viewDoctorsbtn);
             this.Controls.Add(this.viewAppointment);
             this.Controls.Add(this.BookAppointment);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);

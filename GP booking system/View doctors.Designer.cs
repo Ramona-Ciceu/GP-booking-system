@@ -44,10 +44,9 @@
             // viewDoctorsComboBox
             // 
             this.viewDoctorsComboBox.FormattingEnabled = true;
-            this.viewDoctorsComboBox.Location = new System.Drawing.Point(65, 199);
-            this.viewDoctorsComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.viewDoctorsComboBox.Location = new System.Drawing.Point(49, 162);
             this.viewDoctorsComboBox.Name = "viewDoctorsComboBox";
-            this.viewDoctorsComboBox.Size = new System.Drawing.Size(160, 24);
+            this.viewDoctorsComboBox.Size = new System.Drawing.Size(121, 21);
             this.viewDoctorsComboBox.TabIndex = 0;
             this.viewDoctorsComboBox.SelectedIndexChanged += new System.EventHandler(this.viewDoctorsComboBox_SelectedIndexChanged);
             // 
@@ -55,10 +54,9 @@
             // 
             this.viewDoctors.AutoSize = true;
             this.viewDoctors.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewDoctors.Location = new System.Drawing.Point(313, 11);
-            this.viewDoctors.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.viewDoctors.Location = new System.Drawing.Point(235, 9);
             this.viewDoctors.Name = "viewDoctors";
-            this.viewDoctors.Size = new System.Drawing.Size(230, 39);
+            this.viewDoctors.Size = new System.Drawing.Size(187, 31);
             this.viewDoctors.TabIndex = 1;
             this.viewDoctors.Text = "View Doctors";
             // 
@@ -70,11 +68,9 @@
             this.doctorsDetailsGroupBox.Controls.Add(this.dName);
             this.doctorsDetailsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorsDetailsGroupBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.doctorsDetailsGroupBox.Location = new System.Drawing.Point(308, 70);
-            this.doctorsDetailsGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.doctorsDetailsGroupBox.Location = new System.Drawing.Point(231, 57);
             this.doctorsDetailsGroupBox.Name = "doctorsDetailsGroupBox";
-            this.doctorsDetailsGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.doctorsDetailsGroupBox.Size = new System.Drawing.Size(413, 443);
+            this.doctorsDetailsGroupBox.Size = new System.Drawing.Size(310, 360);
             this.doctorsDetailsGroupBox.TabIndex = 2;
             this.doctorsDetailsGroupBox.TabStop = false;
             this.doctorsDetailsGroupBox.Text = "Doctors Details";
@@ -83,10 +79,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(105, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 111);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -94,10 +89,9 @@
             // 
             this.dGender.AutoSize = true;
             this.dGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dGender.Location = new System.Drawing.Point(100, 341);
-            this.dGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dGender.Location = new System.Drawing.Point(75, 277);
             this.dGender.Name = "dGender";
-            this.dGender.Size = new System.Drawing.Size(83, 25);
+            this.dGender.Size = new System.Drawing.Size(69, 20);
             this.dGender.TabIndex = 2;
             this.dGender.Text = "Gender";
             this.dGender.Click += new System.EventHandler(this.dGender_Click);
@@ -106,10 +100,9 @@
             // 
             this.dSpeciality.AutoSize = true;
             this.dSpeciality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dSpeciality.Location = new System.Drawing.Point(100, 292);
-            this.dSpeciality.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dSpeciality.Location = new System.Drawing.Point(75, 237);
             this.dSpeciality.Name = "dSpeciality";
-            this.dSpeciality.Size = new System.Drawing.Size(106, 25);
+            this.dSpeciality.Size = new System.Drawing.Size(86, 20);
             this.dSpeciality.TabIndex = 1;
             this.dSpeciality.Text = "Speciality";
             this.dSpeciality.Click += new System.EventHandler(this.dSpeciality_Click);
@@ -118,10 +111,9 @@
             // 
             this.dName.AutoSize = true;
             this.dName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dName.Location = new System.Drawing.Point(100, 239);
-            this.dName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dName.Location = new System.Drawing.Point(75, 194);
             this.dName.Name = "dName";
-            this.dName.Size = new System.Drawing.Size(68, 25);
+            this.dName.Size = new System.Drawing.Size(55, 20);
             this.dName.TabIndex = 0;
             this.dName.Text = "Name";
             this.dName.Click += new System.EventHandler(this.dName_Click);
@@ -130,34 +122,36 @@
             // 
             this.selectDoctorLabel1.AutoSize = true;
             this.selectDoctorLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectDoctorLabel1.Location = new System.Drawing.Point(59, 129);
-            this.selectDoctorLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.selectDoctorLabel1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.selectDoctorLabel1.Location = new System.Drawing.Point(44, 105);
             this.selectDoctorLabel1.Name = "selectDoctorLabel1";
-            this.selectDoctorLabel1.Size = new System.Drawing.Size(195, 31);
+            this.selectDoctorLabel1.Size = new System.Drawing.Size(156, 25);
             this.selectDoctorLabel1.TabIndex = 3;
             this.selectDoctorLabel1.Text = "Select a doctor";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 11);
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.Location = new System.Drawing.Point(9, 9);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 39);
+            this.button1.Size = new System.Drawing.Size(131, 32);
             this.button1.TabIndex = 4;
             this.button1.Text = "<-  Back to homepage";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // View_doctors
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 565);
+            this.BackColor = System.Drawing.Color.Ivory;
+            this.ClientSize = new System.Drawing.Size(596, 459);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.selectDoctorLabel1);
             this.Controls.Add(this.doctorsDetailsGroupBox);
             this.Controls.Add(this.viewDoctors);
             this.Controls.Add(this.viewDoctorsComboBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "View_doctors";
             this.Text = "View_doctors";
             this.doctorsDetailsGroupBox.ResumeLayout(false);
